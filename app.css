@@ -1,25 +1,97 @@
 *{
-    font-family: ;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
 }
 
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  #cont_main.animate {
+    animation: fadeIn 2s ease;
+  }
+  
+
 body{
-    color:;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98vw;
+    height: 98vh;
     border: 5px solid gray;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
 }
+
+h1{
+    align-self: flex-start;
+    font-weight: bold;
+    margin: 30px;
+    align-self: center;
+    font-size: 100px;
+    align-self: center;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: x-large;
+    margin-top: auto;
+}
+
+#main{
+    flex-grow: 1;
+    flex-shrink: 1;  
+    transition: flex-basis 0.5s ease;
+}
+
+#description{
+    order: 1;
+    flex-basis: 35%;
+    margin: 30px;
+    text-align: justify;
+}
+
 
 header{
     display: inline;
+    order: 2;
+    flex-basis: 35%;
+    margin: 30px;
+    text-align: center;
 }
 
-#cont_main{
-    width: 200px;
+header>ul{
+    list-style-type: none;
 }
+
+#main{
+    order: 3;
+    flex-basis: 35%;
+    margin: 30px;
+}
+
 
 a{  
     font-weight: bold;
     text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a[href^="mailto"], a[href^="tel"],a[href="https://www.muniarequipagob.pe/"] {
+    color: inherit;
 }
 
 a:hover{

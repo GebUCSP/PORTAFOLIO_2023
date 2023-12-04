@@ -9,22 +9,28 @@
     />
     <meta name="keywords" content="portafolio, website, web, site" />
     <meta name="author" content="José Gabriel Cornejo Castro" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="app.css" />
     <title>José Gabriel Cornejo Castro</title>
   </head>
   <body>
+    <h1>José Gabriel Cornejo Castro</h1>
     <div id="principal">
-      <header>
-        <h1>José Gabriel Cornejo Castro</h1>
-        <ul>
-          <li><a href="#info">Información</a></li>
-          <li><a href="#contact">Contacto</a></li>
-          <li><a href="#proyects">Proyectos</a></li>
-        </ul>
-      </header>
       <main>
-        <section id="main">
-          <div id="cont_main">
+        <header>
+          <ul>
+            <li><a href="#info" id="info_b">Información</a></li>
+            <li><a href="#contact" id="contact_b">Contacto</a></li>
+            <li><a href="#proyects" id="proyect_b">Proyectos</a></li>
+          </ul>
+        </header>
+        <section id="description">
+          <div>
             Nací en Arequipa, Perú en 2015. A la edad de 15 años me interesé por
             la programación y comencé a investigar junto a un compañero sobre el
             tema. Este
@@ -34,50 +40,11 @@
             de la computación.
           </div>
         </section>
-
-        <section id="info">
-          <div id="cont_info">
-            <a href="https://cs.ucsp.edu.pe/">
-              Estudios actuales: Ciencias de la computación
-            </a>
-            <a href="https://csj.edu.pe/">
-              Estudios primarios: Colegio San José
-            </a>
-            <a href="https://www.muniarequipagob.pe/">
-              Ciudad: Arequipa, Perú
-            </a>
-            <a href="https://github.com/GebUCSP"> Github: GebUCSP </a>
-          </div>
-        </section>
-
-        <section id="contact">
-          <a href="mailto:jose.cornejo.castro@ucsp.edu.pe">
-            jose.cornejo.castro@ucsp.edu.pe
-          </a>
-          <a href="tel:+51991357008"> Teléfono </a>
-        </section>
-
-        <section id="proyects">
-          <a href="https://github.com/GebUCSP/TallerUnity">
-            Videojuego Unity 3D:
-          </a>
-          <p>
-            Se desarrollo un videojuego que simula a una cocina, mientras tu
-            eres el chef que va cocinando y entregando las ordenes
-          </p>
-          <a href="https://github.com/GebUCSP/PORTAFOLIO_2023">
-            Portafolio UCSP:
-          </a>
-          <p>
-            El portafolio web diseñado como una pagina web para probar el
-            algoritmo "Web Ranking"
-          </p>
-        </section>
-
-        <section id="thanks">
-          <p>Gracias:</p>
+        <section id="main">
+          <div id="cont_main"></div>
         </section>
       </main>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
